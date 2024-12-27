@@ -17,7 +17,8 @@ int countInDirection(const vector<string>& grid, const string& word, int startRo
         if (r >= 0 && r < rows && c >= 0 && c < cols && grid[r][c] == word[i]) {
             r += dr;
             c += dc;
-        } else {
+        } 
+        else {
             return 0; // Break out of the loop if any character doesn't match
         }
     }
@@ -42,13 +43,13 @@ int countXMASOccurrences(const string& filePath) {
     string word = "XMAS";
     vector<pair<int, int>> directions = { // All 8 possible directions
         {0, -1},   // Down
-        {0, 1},  // Up
-        {-1, 0},  // Left
-        {1, 0},   // Right
-        {-1, -1},  // Diagonal Down-Left
-        {1, 1},  // Diagonal Up-Right
-        {-1, 0}, // Diagonal Up-Left
-        {1, -1}    // Diagonal Down-Right
+        {0, 1},    // Up
+        {-1, 0},   // Left
+        {1, 0},    // Right
+        {-1, -1},  // Bottom-left diagonal
+        {-1, 1},   // Top-left diagonal
+        {1, -1},   // Bottom-right diagonal
+        {1, 1}     // Top-right diagonal
     };
 
     int totalCount = 0;
