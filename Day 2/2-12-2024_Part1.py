@@ -9,7 +9,6 @@ def is_safe(report):
     # The report is safe if it satisfies both conditions
     return (increasing or decreasing) and valid_differences
 
-
 def count_safe_reports(file_path):
     # Read the input file and count the number of safe reports.
     safe_count = 0

@@ -13,6 +13,7 @@ with open('/home/dell/CODING/Advent of Code 2024/Day 1/1-12-2024.txt', 'r') as f
         right.append(int(right_number))
 
 sum=0
+
 for i in left:
     a=right.count(i)
     sum+=(i*a)

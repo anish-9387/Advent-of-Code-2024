@@ -1,4 +1,5 @@
 import re
+
 def calculate_mul_sum_with_conditions(file_path):
     # Regular expressions for mul, do, and don't instructions
     mul_pattern = r"mul\((\d+),(\d+)\)"
